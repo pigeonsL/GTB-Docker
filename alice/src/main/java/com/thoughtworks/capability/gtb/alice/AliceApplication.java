@@ -9,11 +9,12 @@ import org.springframework.web.client.RestTemplate;
 public class AliceApplication {
 
   public static void main(String[] args) {
+
     SpringApplication.run(AliceApplication.class, args);
   }
 
   @Bean
-  public RestTemplate restTemplate(){
+  public RestTemplate getRestTemplate(){
     return new RestTemplate();
   }
 }
